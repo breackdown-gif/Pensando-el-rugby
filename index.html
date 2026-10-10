@@ -126,6 +126,38 @@
       border-top: 3px solid var(--accent-orange);
     }
 
+    /* Fixture */
+    .fixture-fecha {
+      font-weight: bold;
+      color: var(--accent-orange);
+    }
+    .card-manual h3 {
+      margin: 0 0 4px 0;
+    }
+    .fixture-sub {
+      margin: 0 0 10px 0;
+      color: #a0b0c0;
+      font-size: 0.9rem;
+    }
+    .fixture-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .fixture-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #2a3b50;
+    }
+    .fixture-list li:last-child {
+      border-bottom: none;
+    }
+    .fixture-list .hora {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--accent-blue);
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -174,9 +206,58 @@
       <div class="section-overlay">
         <h2>Fixture & Resultados</h2>
         <p>Próximos partidos y resultados de Formosa y la región.</p>
-        <div class="card-manual">
-          <h3>Próxima Fecha - Regional NEA / Local</h3>
-          <p>Edita este contenido manualmente en index.html cuando quieras actualizar partidos.</p>
+        <p class="fixture-fecha">📅 Fin de semana: Sábado 10 y Domingo 11 de Octubre de 2026</p>
+        <div class="grid-manual">
+          <div class="card-manual">
+            <h3>Torneo Regional NEA 2026</h3>
+            <p class="fixture-sub">Primera - Fecha 15</p>
+            <ul class="fixture-list">
+              <li><span class="hora">Sáb 10/10 · 15:00</span> San José vs. CURNE</li>
+              <li><span class="hora">Sáb 10/10 · 15:45</span> Aguará vs. CURDA</li>
+              <li><span class="hora">Sáb 10/10 · 16:00</span> San Patricio vs. Taraguy</li>
+              <li><span class="hora">Dom 11/10 · 16:00</span> Regatas vs. Aranduroga</li>
+            </ul>
+          </div>
+          <div class="card-manual">
+            <h3>Torneo Regional NEA 2026</h3>
+            <p class="fixture-sub">Intermedia - Fecha 15</p>
+            <ul class="fixture-list">
+              <li><span class="hora">Sáb 10/10 · 14:00</span> San Patricio vs. Taraguy</li>
+              <li><span class="hora">Sáb 10/10 · 16:00</span> Sixty vs. CURNE</li>
+              <li><span class="hora">Dom 11/10 · 14:00</span> Regatas vs. Aranduroga</li>
+              <li><span class="hora">Libre</span> Aguará</li>
+            </ul>
+          </div>
+          <div class="card-manual">
+            <h3>Torneo Regional B NEA 2026</h3>
+            <p class="fixture-sub">Primera - Fecha 6</p>
+            <ul class="fixture-list">
+              <li><span class="hora">Sáb 10/10 · 14:00</span> Pay Ubre vs. Sixty</li>
+              <li><span class="hora">Dom 11/10 · 14:30</span> Qompi vs. Lomas</li>
+              <li><span class="hora">Dom 11/10 · 14:30</span> Tacurú vs. Caza y Pesca</li>
+              <li><span class="hora">Dom 11/10 · 14:30</span> Abipones vs. CAPRI</li>
+            </ul>
+          </div>
+          <div class="card-manual">
+            <h3>Torneo Clausura Desarrollo Chaco URNE</h3>
+            <p class="fixture-sub">Finales</p>
+            <ul class="fixture-list">
+              <li><span class="hora">Dom 11/10 · 15:00 · Final Oro</span> UNCAUS vs. Italiana</li>
+              <li><span class="hora">Dom 11/10 · 16:00 · Final Plata</span> Cotton vs. Chaco R.</li>
+              <li><span class="hora">Dom 11/10 · 15:00 · Final Bronce</span> Águilas vs. Unión <em>(W.O. Unión)</em></li>
+            </ul>
+          </div>
+          <div class="card-manual">
+            <h3>Divisiones Juveniles y Menores</h3>
+            <p class="fixture-sub">Selección</p>
+            <ul class="fixture-list">
+              <li><span class="hora">M-19 · Sáb 10/10 · 14:00</span> San Patricio vs. Taraguy A</li>
+              <li><span class="hora">M-19 · Sáb 10/10 · 14:00</span> Sixty vs. CURNE</li>
+              <li><span class="hora">M-19 · Dom 11/10 · 14:00</span> Regatas vs. Aranduroga A</li>
+              <li><span class="hora">M-16 · Sáb 10/10 · 13:00</span> Aguará vs. CURNE</li>
+              <li><span class="hora">M-15 · Sáb 10/10 · 13:00</span> Sixty vs. CURNE</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
