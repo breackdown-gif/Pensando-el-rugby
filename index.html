@@ -173,6 +173,56 @@
       font-weight: bold;
     }
 
+    /* Regional NEA: resultados y posiciones */
+    #posiciones { background-image: url('fondo-noticias.png.png'); }
+    .resultados-grid ul, .proxima-fecha ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .resultados-grid li, .proxima-fecha li {
+      padding: 8px 0;
+      border-bottom: 1px solid #2a3b50;
+    }
+    .resultados-grid li:last-child, .proxima-fecha li:last-child {
+      border-bottom: none;
+    }
+    .resultados-grid strong {
+      color: var(--accent-orange);
+    }
+    .regional-nea-section h3 {
+      margin: 0 0 10px 0;
+    }
+    .tabla-posiciones table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tabla-posiciones th, .tabla-posiciones td {
+      padding: 6px 8px;
+      text-align: left;
+      border-bottom: 1px solid #2a3b50;
+    }
+    .tabla-posiciones th {
+      color: var(--accent-blue);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+    .tabla-posiciones td:first-child, .tabla-posiciones th:first-child,
+    .tabla-posiciones td:last-child, .tabla-posiciones th:last-child {
+      text-align: center;
+      width: 48px;
+    }
+    .tabla-posiciones td:last-child {
+      font-weight: bold;
+    }
+    .tabla-posiciones tbody tr:first-child td {
+      color: var(--accent-orange);
+      font-weight: bold;
+    }
+    .tabla-posiciones small {
+      color: #a0b0c0;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -188,6 +238,7 @@
   <nav>
     <a href="#noticias">Noticias</a>
     <a href="#fixture">Fixture</a>
+    <a href="#posiciones">Posiciones</a>
     <a href="#entrenamiento">Entrenamiento</a>
     <a href="#tienda">Tienda</a>
     <a href="#opinion">Programa / Vivo</a>
@@ -273,6 +324,63 @@
               <li><span class="hora">M-15 · Sáb 10/10 · 13:00</span> Sixty vs. CURNE</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 2b: Resultados y Posiciones - Regional NEA Fecha 15 (MANUAL) -->
+    <section id="posiciones">
+      <div class="section-overlay regional-nea-section">
+        <h2>Torneo Regional del NEA - Fecha 15</h2>
+        <div class="grid-manual">
+
+          <!-- Resultados de la jornada -->
+          <div class="card-manual resultados-grid">
+            <h3>Resultados Fecha 15</h3>
+            <ul>
+              <li><strong>San Patricio</strong> 39 - 36 Taraguy</li>
+              <li><strong>San José</strong> 33 - 24 CURNE</li>
+              <li>Aguará 22 - 60 <strong>CURDA</strong></li>
+              <li>Regatas vs. Aranduroga <em>(Pendiente)</em></li>
+            </ul>
+          </div>
+
+          <!-- Tabla de Posiciones -->
+          <div class="card-manual tabla-posiciones">
+            <h3>Tabla de Posiciones</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Pos.</th>
+                  <th>Equipo</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Taraguy</td><td>56</td></tr>
+                <tr><td>2</td><td>CURNE</td><td>50</td></tr>
+                <tr><td>3</td><td>Aranduroga*</td><td>49</td></tr>
+                <tr><td>4</td><td>San José</td><td>44</td></tr>
+                <tr><td>5</td><td>CURDA</td><td>41</td></tr>
+                <tr><td>6</td><td>San Patricio</td><td>33</td></tr>
+                <tr><td>7</td><td>Regatas*</td><td>21</td></tr>
+                <tr><td>8</td><td>Aguará</td><td>19</td></tr>
+              </tbody>
+            </table>
+            <p><small>* Tienen partido pendiente de la fecha 15.</small></p>
+          </div>
+
+          <!-- Próxima Fecha -->
+          <div class="card-manual proxima-fecha">
+            <h3>Próxima Fecha (17/10/2026)</h3>
+            <ul>
+              <li>Regatas vs. San José</li>
+              <li>Aranduroga vs. Aguará</li>
+              <li>CURDA vs. San Patricio</li>
+              <li><strong>Taraguy vs. CURNE</strong></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
